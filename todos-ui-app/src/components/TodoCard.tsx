@@ -14,7 +14,7 @@ function TodoCard(props: TodoComponentProps) {
     }
 
     const keyPressHandle = (event: KeyboardEvent<HTMLInputElement>) => {
-        if (event.keyCode == 13) {
+        if (event.keyCode === 13) {
             let updatedTodoItem: TodoApiItem = { id: props.id, status: props.status, text: todoText };
             setReadOnlyState(true);
             if (props.handlers.editHandler) {
@@ -40,17 +40,6 @@ function TodoCard(props: TodoComponentProps) {
             props.handlers.editHandler(updatedTodoItem);
         }
     }
-
-    const styles = {
-        input1: {
-            height: 50, 
-            padding : 20
-        },
-        input2: {
-            height: 200,
-            fontSize: "3em"
-        }
-    };
 
     return (
         <>
