@@ -12,9 +12,11 @@ To run with Docker (For the test - there is backend and frontend running  via sa
 4. To access UI - access localhost:3000
 
 To run without docker 
-1. From cmd line - go to folder Backend and run command
+1. From cmd line - go to folder Backend and run commands
+   npm install 
    npm start   (backend will run on port 3001)
-2. From cmd line - go to folder todos-ui-app and run command
+3. From cmd line - go to folder todos-ui-app and run command
+   npm install
    npm start   (frontend will run on port 3000)
 
 NOTE: 
