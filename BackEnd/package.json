@@ -10,7 +10,7 @@
   },
   "author": "Michael Litovsky",
   "license": "ISC",
-  "description": "",
+  "description": "Backend part",
   "dependencies": {
     "@tsed/exceptions": "^7.83.3",
     "@types/config": "^3.3.5",
