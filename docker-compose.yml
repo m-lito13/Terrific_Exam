@@ -1,0 +1,19 @@
+version: '3'
+networks:
+  myNetwork:
+services:
+  frontend:
+    image: terryfic_ui_app
+    build: ./todos-ui-app
+    ports:
+      - "3000:3000"
+    networks:
+      - myNetwork
+  backend:
+    image: terryfic_ui_backend
+    build: ./BackEnd
+    ports:
+      - "3001:3001"
+    networks:
+      - myNetwork
+
