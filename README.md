@@ -32,3 +32,5 @@ Delete Todo item : DELETE <BaseURL>/api/todos/<id> , <id> of Todo item to be del
 Update Todo item : PUT <BaseURL>/api/todos/<id> , request body {"text":"tochange" status:"NEW"}  (valid values for status are "NEW", "INPROCESS", "DONE") 
 
 For update request one of fields can be provided , for add new - both fields 
+
+UI - in order to edit TODO item - click EDIT TEXT on the item to be edited -- the item text becomes editable. Pressing ENTER key - saves edit changes and makes text readonly again
